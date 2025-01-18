@@ -9,6 +9,8 @@
 
 <body>
 
+	<h1>Internship Form</h1>
+
 	<div class="container mt-5">
     <form>
       <!-- First Name -->
@@ -20,6 +22,9 @@
           class="form-control"
           required
         />
+        <div class="invalid-feedback">
+          Please provide a valid First Name.
+        </div>
       </div>
 
       <!-- Last Name -->
@@ -31,6 +36,9 @@
           class="form-control"
           required
         />
+        <div class="invalid-feedback">
+          Please provide a valid Last Name.
+        </div>
       </div>
 
       <!-- Email Address -->
@@ -42,6 +50,9 @@
           class="form-control"
           required
         />
+        <div class="invalid-feedback">
+          Please provide a valid Email Address.
+        </div>
       </div>
 
       <!-- College -->
@@ -53,17 +64,23 @@
           class="form-control"
           required
         />
+        <div class="invalid-feedback">
+          Please provide your College Name.
+        </div>
       </div>
 
       <!-- Roll No. -->
       <div class="mb-3">
         <label for="roll-no-input" class="form-label">Roll No.</label>
         <input
-          type="number"
+          type="text"
           id="roll-no-input"
           class="form-control"
           required
         />
+        <div class="invalid-feedback">
+          Please provide a valid Roll Number.
+        </div>
       </div>
 
       <!-- Graduation Year -->
@@ -80,6 +97,9 @@
           <option value="2022">2022</option>
           <option value="2023">2023</option>
         </select>
+        <div class="invalid-feedback">
+          Please select your Graduation Year.
+        </div>
       </div>
 
       <!-- Conditions Checkbox -->
@@ -93,12 +113,16 @@
         <label for="conditions-checkbox" class="form-check-label">
           Agree to terms and conditions
         </label>
+        <div class="invalid-feedback">
+          You must agree before submitting.
+        </div>
       </div>
 
       <!-- Submit Button -->
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
   </div>
+
 	
     <script type="text/javascript" src="./script.js">
 </script>
