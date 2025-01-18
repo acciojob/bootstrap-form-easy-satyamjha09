@@ -9,131 +9,96 @@
 
 <body>
 
-	<div class="container">
-  <h1 class="mb-4">Intern Application Form</h1>
-  
-  <!-- Add the `needs-validation` class and `novalidate` attribute to enable Bootstrap's validation styles -->
-  <form class="row g-3 needs-validation" novalidate>
-    
-    <!-- First Name -->
-    <div class="col-md-6">
-      <label for="first-name-input" class="form-label">First Name</label>
-      <input
-        type="text"
-        class="form-control"
-        id="first-name-input"
-        name="first-name"
-        required
-      />
-      <div class="invalid-feedback">
-        Please provide a valid First Name.
-      </div>
-    </div>
-
-    <!-- Last Name -->
-    <div class="col-md-6">
-      <label for="last-name-input" class="form-label">Last Name</label>
-      <input
-        type="text"
-        class="form-control"
-        id="last-name-input"
-        name="last-name"
-        required
-      />
-      <div class="invalid-feedback">
-        Please provide a valid Last Name.
-      </div>
-    </div>
-
-    <!-- Email -->
-    <div class="col-md-6">
-      <label for="email-input" class="form-label">Email</label>
-      <input
-        type="email"
-        class="form-control"
-        id="email-input"
-        name="email"
-        required
-      />
-      <div class="invalid-feedback">
-        Please provide a valid Email.
-      </div>
-    </div>
-
-    <!-- College Name -->
-    <div class="col-md-6">
-      <label for="college-input" class="form-label">College Name</label>
-      <input
-        type="text"
-        class="form-control"
-        id="college-input"
-        name="college-name"
-        required
-      />
-      <div class="invalid-feedback">
-        Please provide your College Name.
-      </div>
-    </div>
-
-    <!-- Graduation Year -->
-    <div class="col-md-6">
-      <label for="graduation-year" class="form-label">Graduation Year</label>
-      <select
-        class="form-select"
-        id="graduation-year"
-        name="graduation-year"
-        required
-      >
-        <option value="" selected disabled>Select your Graduation Year</option>
-        <option value="2020">2020</option>
-        <option value="2021">2021</option>
-        <option value="2022">2022</option>
-        <option value="2023">2023</option>
-      </select>
-      <div class="invalid-feedback">
-        Please select your Graduation Year.
-      </div>
-    </div>
-
-    <!-- Roll No -->
-    <div class="col-md-6">
-      <label for="roll-no-input" class="form-label">Roll No</label>
-      <input
-        type="number"
-        class="form-control"
-        id="roll-no-input"
-        name="roll-no"
-        required
-      />
-      <div class="invalid-feedback">
-        Please provide a valid Roll Number.
-      </div>
-    </div>
-
-    <!-- Conditions Checkbox -->
-    <div class="col-12">
-      <div class="form-check">
+	<div class="container mt-5">
+    <form>
+      <!-- First Name -->
+      <div class="mb-3">
+        <label for="first-name-input" class="form-label">First Name</label>
         <input
-          type="checkbox"
-          class="form-check-input"
-          id="conditions-checkbox"
+          type="text"
+          id="first-name-input"
+          class="form-control"
           required
         />
-        <label class="form-check-label" for="conditions-checkbox">
-          I accept the Terms and Conditions
-        </label>
-        <div class="invalid-feedback">
-          You must agree before submitting.
-        </div>
       </div>
-    </div>
 
-    <!-- Submit Button -->
-    <div class="col-12">
-      <button class="btn btn-primary" type="submit">Submit</button>
-    </div>
-  </form>
-</div>
+      <!-- Last Name -->
+      <div class="mb-3">
+        <label for="last-name-input" class="form-label">Last Name</label>
+        <input
+          type="text"
+          id="last-name-input"
+          class="form-control"
+          required
+        />
+      </div>
+
+      <!-- Email Address -->
+      <div class="mb-3">
+        <label for="email-input" class="form-label">Email Address</label>
+        <input
+          type="email"
+          id="email-input"
+          class="form-control"
+          required
+        />
+      </div>
+
+      <!-- College -->
+      <div class="mb-3">
+        <label for="college-input" class="form-label">College</label>
+        <input
+          type="text"
+          id="college-input"
+          class="form-control"
+          required
+        />
+      </div>
+
+      <!-- Roll No. -->
+      <div class="mb-3">
+        <label for="roll-no-input" class="form-label">Roll No.</label>
+        <input
+          type="number"
+          id="roll-no-input"
+          class="form-control"
+          required
+        />
+      </div>
+
+      <!-- Graduation Year -->
+      <div class="mb-3">
+        <label for="grad-year-select" class="form-label">Graduation Year</label>
+        <select
+          id="grad-year-select"
+          class="form-select"
+          required
+        >
+          <option value="" selected disabled>Select your Graduation Year</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+        </select>
+      </div>
+
+      <!-- Conditions Checkbox -->
+      <div class="mb-3 form-check">
+        <input
+          type="checkbox"
+          id="conditions-checkbox"
+          class="form-check-input"
+          required
+        />
+        <label for="conditions-checkbox" class="form-check-label">
+          Agree to terms and conditions
+        </label>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
 	
     <script type="text/javascript" src="./script.js">
 </script>
